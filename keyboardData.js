@@ -1,0 +1,97 @@
+export default [
+	[
+		{ slot1: 'Esc', name: 'Escape' },
+		{ slot1: 'F1' },
+		{ slot1: 'F2' },
+		{ slot1: 'F3' },
+		{ slot1: 'F4' },
+		{ slot1: 'F5' },
+		{ slot1: 'F6' },
+		{ slot1: 'F7' },
+		{ slot1: 'F8' },
+		{ slot1: 'F9' },
+		{ slot1: 'F10' },
+		{ slot1: 'F11' },
+		{ slot1: 'F12' },
+		{ slot1: 'PrtSc' },
+		{ slot1: 'Insert' },
+		{ slot1: 'Delete' }
+	],
+	[
+		{ slot1: '`' },
+		{ slot1: '1' },
+		{ slot1: '2' },
+		{ slot1: '3' },
+		{ slot1: '4' },
+		{ slot1: '5' },
+		{ slot1: '6' },
+		{ slot1: '7' },
+		{ slot1: '8' },
+		{ slot1: '9' },
+		{ slot1: '0' },
+		{ slot1: '-' },
+		{ slot1: '=' },
+		{ slot1: 'Backspace' }
+	],
+	[
+		{ slot1: 'Tab' },
+		{ slot1: 'Q' },
+		{ slot1: 'W' },
+		{ slot1: 'E' },
+		{ slot1: 'R' },
+		{ slot1: 'T' },
+		{ slot1: 'Y' },
+		{ slot1: 'U' },
+		{ slot1: 'I' },
+		{ slot1: 'O' },
+		{ slot1: 'P' },
+		{ slot1: '[' },
+		{ slot1: ']' },
+		{ slot1: '\\' }
+	],
+	[
+		{ slot1: 'CapsLk', name: 'CapsLock' },
+		{ slot1: 'A' },
+		{ slot1: 'S' },
+		{ slot1: 'D' },
+		{ slot1: 'F' },
+
+		{ slot1: 'G' },
+		{ slot1: 'H' },
+		{ slot1: 'J' },
+		{ slot1: 'K' },
+
+		{ slot1: 'L' },
+		{ slot1: ';' },
+		{ slot1: "'" },
+		{ slot1: 'Enter' }
+	],
+	[
+		{ slot1: 'Shift', name: 'ShiftLeft' },
+		{ slot1: 'Z' },
+		{ slot1: 'X' },
+		{ slot1: 'C' },
+		{ slot1: 'V' },
+
+		{ slot1: 'B' },
+		{ slot1: 'N' },
+		{ slot1: 'M' },
+		{ slot1: ',' },
+		{ slot1: '.' },
+		{ slot1: '/' },
+		{ slot1: 'Shift', name: 'ShiftRight' },
+		{ slot1: '↑', name: 'ArrowUp' }
+	],
+	[
+		{ slot1: 'Ctrl', name: 'ControlLeft' },
+		{ slot1: 'Fn' },
+		{ slot1: 'Win' },
+		{ slot1: 'Alt', name: 'AltLeft' },
+		{ slot1: 'Space', name: 'Space' },
+		{ slot1: 'Alt', name: 'AltRight' },
+		{ slot1: 'Ctrl', name: 'ControlRight' },
+		{ slot1: '←', name: 'ArrowLeft' },
+		{ slot1: '↓', name: 'ArrowDown' },
+		{ slot1: '→', name: 'ArrowRight' }
+	]
+]

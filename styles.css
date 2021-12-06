@@ -1,0 +1,132 @@
+body {
+	height: 97vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.keyboard {
+	/* position: relative; */
+	/* left: 0;
+	top: 0; */
+	/* position: absolute;
+	z-index: 0; */
+	border: 1px solid red;
+}
+
+.row {
+	/* border: 1px solid red; */
+	/* position: absolute; */
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+}
+
+.row.first .key {
+	font-size: 80%;
+	min-height: 15px;
+	min-width: 24.8px;
+}
+
+.row.first {
+	top: 0;
+	left: 0;
+}
+.row.second {
+	top: 27px;
+	left: 0;
+}
+.row.third {
+	top: 70px;
+	left: 0;
+}
+.row.fourth {
+	top: 113px;
+	left: 0;
+}
+.row.fifth {
+	top: 156px;
+	left: 0;
+}
+.row.sixth {
+	top: 199px;
+	left: 0;
+}
+
+.key {
+	border: 2px solid black;
+	background-color: dimgray;
+	color: white;
+	padding: 3px;
+	margin: 2px;
+	min-width: 30px;
+	min-height: 30px;
+	border-radius: 5px;
+	position: relative;
+}
+
+.activeKey {
+	position: relative;
+	top: -25%;
+	left: -25%;
+	animation: pulse 0.5s;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 200%;
+	z-index: 2;
+}
+
+@keyframes pulse {
+	0% {
+		background-color: dimgray;
+	}
+	100% {
+		background-color: red;
+	}
+}
+
+.key.Backspace {
+	font-size: 74%;
+}
+
+.key.Tab {
+	width: 50px;
+}
+
+.key.CapsLk {
+	width: 60px;
+}
+
+.key.Enter {
+	width: 65px;
+}
+
+.key.ShiftLeft {
+	width: 80px;
+}
+
+.key.ShiftRight {
+	width: 45px;
+}
+
+.key.ControlLeft {
+	width: 40px;
+}
+.key.ControlRight {
+	width: 45px;
+}
+
+.key.Space {
+	width: 247px;
+}
+
+.key.ArrowUp,
+.key.ArrowDown,
+.key.ArrowLeft,
+.key.ArrowRight {
+	text-align: center;
+}
