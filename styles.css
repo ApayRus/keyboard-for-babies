@@ -7,18 +7,10 @@ body {
 }
 
 .keyboard {
-	/* position: relative; */
-	/* left: 0;
-	top: 0; */
-	/* position: absolute;
-	z-index: 0; */
 	border: 1px solid red;
 }
 
 .row {
-	/* border: 1px solid red; */
-	/* position: absolute; */
-	position: absolute;
 	display: flex;
 	flex-direction: row;
 }
@@ -27,31 +19,6 @@ body {
 	font-size: 80%;
 	min-height: 15px;
 	min-width: 24.8px;
-}
-
-.row.first {
-	top: 0;
-	left: 0;
-}
-.row.second {
-	top: 27px;
-	left: 0;
-}
-.row.third {
-	top: 70px;
-	left: 0;
-}
-.row.fourth {
-	top: 113px;
-	left: 0;
-}
-.row.fifth {
-	top: 156px;
-	left: 0;
-}
-.row.sixth {
-	top: 199px;
-	left: 0;
 }
 
 .key {
@@ -67,12 +34,12 @@ body {
 }
 
 .activeKey {
-	position: relative;
-	top: -25%;
-	left: -25%;
+	position: absolute;
+	top: -50%;
+	left: -50%;
 	animation: pulse 0.5s;
-	width: 100%;
-	height: 100%;
+	width: 150%;
+	height: 150%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
