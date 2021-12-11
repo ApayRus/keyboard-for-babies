@@ -1,11 +1,13 @@
 import Row from './row.js'
+import LangSwitcher from './lang-switcher.js'
 import keyboardData from './keyboardData.js'
 
 const template = `
 <div class="keyboard">
 	<div v-for="(row, index) in rows">
-		<app-row v-bind:activeKey="activeKey" :index="index" :keys="row"></app-row>
+		<app-row v-bind:activeKey="activeKey" :index="index" :keys="row" />
 	</div>
+	<lang-switcher :langs="langs" :activeLang="activeLang" :switchLang="switchLang" /> 
 </div>
 `
 
@@ -16,7 +18,7 @@ export default {
 			e.preventDefault()
 			const { key, code } = e
 			this.activeKey = { key, code }
-			console.log(code)
+			console.log(e)
 			clearTimeout(this.timeout)
 			this.timeout = setTimeout(() => (this.activeKey = null), 1000)
 			// audio
@@ -28,10 +30,20 @@ export default {
 		return {
 			rows: keyboardData,
 			activeKey: null,
-			timeout: 0
+			timeout: 0,
+			langs: ['en', 'ru', 'ar'],
+			activeLang: 'en'
 		}
 	},
-	components: { 'app-row': Row },
+	methods: {
+		switchLang(lang) {
+			this.activeLang = lang
+		}
+	},
+	components: {
+		'app-row': Row,
+		'lang-switcher': LangSwitcher
+	},
 	mounted() {
 		console.log('Content component mounted.')
 	}
