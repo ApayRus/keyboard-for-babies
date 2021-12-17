@@ -2,12 +2,12 @@ import Row from './row.js'
 import LangSwitcher from './lang-switcher.js'
 import keyboardData from './keyboardData.js'
 
-const template = `
+const template = /*html*/ `
 <div class="keyboard">
 	<div v-for="(row, index) in rows">
 		<app-row v-bind:activeKey="activeKey" :index="index" :keys="row" />
 	</div>
-	<lang-switcher :langs="langs" :activeLang="activeLang" :switchLang="switchLang" /> 
+	<!-- <lang-switcher :langs="langs" :activeLang="activeLang" :switchLang="switchLang" /> -->
 </div>
 `
 
